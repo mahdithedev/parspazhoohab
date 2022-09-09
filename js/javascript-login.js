@@ -54,19 +54,19 @@ function search(){
                 }
                 if (j1 != 0){
                     if (j1 == 1){
-                        document.getElementById("searchLink").href = "./gallery.html";
+                        document.getElementById("searchLink").href = "/gallery";
                         document.getElementById("searchLink").click();
                     }
                     if (j1 == 2){
-                        document.getElementById("searchLink").href = "./about.html";
+                        document.getElementById("searchLink").href = "/about";
                         document.getElementById("searchLink").click();
                     }
                     if (j1 == 3){
-                        document.getElementById("searchLink").href = "./contact.html";
+                        document.getElementById("searchLink").href = "/contact";
                         document.getElementById("searchLink").click();
                     }
                     if (j1 == 4){
-                        document.getElementById("searchLink").href = "./main.html";
+                        document.getElementById("searchLink").href = "/main";
                         document.getElementById("searchLink").click();
                     }
                 }
