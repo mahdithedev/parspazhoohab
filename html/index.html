@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&family=Vazirmatn:wght@200&display=swap" rel="stylesheet">
+    <link href="../css/large-main.css" media="screen and (min-width: 1367px)" rel="stylesheet">
+    <link href="../css/laptop-main.css" media="screen and (max-width: 1366px)" rel="stylesheet">
+    <link href="../css/tablet-main.css" media="screen and (max-width: 768px)" rel="stylesheet">
+    <link href="../css/mobile-main.css" media="screen and (max-width: 425px)" rel="stylesheet">
+    <link href="../icons/css/all.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/favicon.jpg">
+    <script type="text/javascript" src="../js/javascript-main.js"></script>  
+    <title>پارس پژوه آب</title>
+  </head>
+  <body onload="timer(), create()" id="webbody">
+    <div id="nav">
+
+      <div id="nav-right">
+        <img id="logo" src="../images/logo.jpg">
+        <a href="./index.html">صفحه‌ اصلی</a>
+        <a href="./gallery.html">گالری</a>
+        <a href="../files/project.pdf" target="_blank">پروژه‌ها</a>
+        <a href="./about.html">درباره ما</a>
+        <a href="./contact.html">ارتباط با ما</a>
+      </div>
+
+      <div id="nav-left">
+        <div id="language">
+          <div>&#10094;</div>
+          <img src="../images/language.png">
+        </div>
+        <div id="search">
+          <input id="search-inp" type="text" placeholder="...جستجو">
+        </div>
+      </div>
+      
+    </div>
+    <div id="carousel-container">
+      <div id="carousel">
+        <img id="carousel-img" src="../images/i1.jpg">
+        <div id="previous" onclick="nop('-')"><span>&#10094</span></div>
+        <div id="next" onclick="nop('+')"><span>&#10095</span></div>
+        <div id="circles">
+          <div class="c opacity" onclick="Cclicked(1)"></div>
+          <div class="c" onclick="Cclicked(2)"></div>
+          <div class="c" onclick="Cclicked(3)"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="container">
+      <div id="icons">
+        <div id="icons-d">
+        <div class="icons-c">
+          <a href="../files/article.pdf"  target="_blank">
+            <i class="fas fa-book  fa-2x"></i>
+          </a>
+        </div>
+        <div class="icons-c">
+          <a href="../files/Recruitment.pdf" target="_blank">
+            <i class="fas fa-user fa-2x"></i>
+          </a>
+        </div>
+        <div class="icons-c">
+          <a href="tel:07633684650" target="_blank">
+            <i class="fas fa-phone fa-2x"></i>
+          </a>
+        </div>
+        <div class="icons-c">
+          <a href="../files/cv.pdf" target="_blank">
+            <i class="fas far fa-newspaper	 fa-2x"></i>
+          </a>
+        </div>
+        <div class="icons-c">
+          <a target="_blank">
+            <i class="fas  fa-coins fa-2x"></i>
+          </a>
+        </div>
+        <div class="icons-c">
+          <a href="./login.html">
+            <i class="fa  far fa-file-alt	 fa-2x"></i>
+          </a>
+        </div>
+
+
+
+
+      <div id="text-1">
+        <div class="icon-txt">مقالات</div>
+        <div class="icon-txt">درخواست همکاری</div>
+        <div class="icon-txt">تلفن</div>
+        <div class="icon-txt">رزومه</div>
+        <div class="icon-txt">مناقصات</div>
+        <div class="icon-txt">گزارش گیری</div>
+
+      </div>
+
+    </div>
+
+
+        </div>
+      </div>
+
+      <div id="txt-2">
+        <div id="txt-3">
+          <span>معرفی</span>
+          شرکت مهندسین مشاور پارس پژوه آب در سال 1382 فعالیت خود را در زمینه ارائه خدمات مشاوره در گروه تخصصی تاسیسات آب و فاضلاب آغاز نمود 
+          و طی سال‌ها با تلاش، مدیریت و برنامه ریزی مناسب و بهره گیری از کارشناسان با تجربه توانسته ضمن احراز صلاحیت از سوی سازمان برنامه و بودجه
+          کشور رتبه 2 در زمینه های مدیریت طرح تاسیسات آب و فاضلاب، آبیاری و زهکشی و بازرسی فنی ایمنی
+          فعالیت نماید.
+        </div>
+      </div>
+
+    </div>
+
+
+    <div id="footer">
+      <div id="col-1">
+        <div class="top">پیوندها
+          <a>
+            <i class="fa far fa-paperclip"></i>
+          </a>
+        </div>
+        <div class="other-cols">
+          <div class="items"><a href="https://www.nww.ir">https://www.nww.ir</a></div>
+          <div class="items"><a href="https://www.abfahormozgan.com">https://www.abfahormozgan.com</a></div>
+          <div class="items"><a href="https://abfakerman.ir">https://abfakerman.ir</a></div>
+          <div class="items"><a href="https://www.mporg.ir">https://www.mporg.ir</a></div>
+        </div>
+      </div>
+      <div id="col-2">
+        <div class="top">دفتر مرکزی
+          <a>
+            <i class="fa far fa-building"></i>
+          </a>
+        </div>
+        <div class="other-cols">
+          <div class="items">دفتر بندرعباس : رسالت شمالی – مجتمع تجاری مسکونی سپاهان – طبقه ۵ واحد ۲۲ ، ۲۳ ، ۲۴ </div>
+          <div class="items">۷۹۱۵۸۶۷۹۳۴ کدپستی</div>
+          <div class="items">تلفن ۲-۳۳۶۸۴۶۵۰ -۰۷۶</div>
+          <div class="items">فکس  ۳۳۶۸۴۶۵۴ -۰۷۶
+          </div>
+        </div>
+      </div>
+      <div id="col-3"> 
+        <div class="top">تماس باما
+          <a>
+            <i class="fa far fa-phone"></i>
+          </a>
+        </div>
+        <div class="other-cols">
+          <div class="items">www.parspazhoohab.ir</div>
+          <div class="items">parspazhooh.motaleat@gmail.com</div>
+          <div class="items"></div>
+        </div>
+      </div>
+    </div>
+
+    <a id="searchLink"></a>
+
+  </body>
+</html>

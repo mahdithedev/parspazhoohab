@@ -1,0 +1,249 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right,#000,rgb(38, 38, 38));
+  background-repeat: no-repeat;
+  background-color: rgb(38, 38, 38);}
+/*Navbar*/
+#nav{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: row-reverse wrap;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #f0f0f0;
+  font-family: 'Vazirmatn', sans-serif;
+  z-index: 9;
+}
+#nav-left{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  align-items: center;
+  width: 350px;
+  height: 100%;
+}
+#language{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 80px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 0.5px solid #aaa;
+}
+#language div{
+  transform: rotate(-90deg);
+  margin-right: 10px;
+  color: #aaa;
+}
+#language img{
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+#nav-right{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  align-items: center;
+  width: 700px;
+  height: 100%;
+}
+#logo{
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+#search{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  margin-right: 50px;
+}
+#search-inp{
+  width: 150px;
+  height: 40px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-image: url("../images/magnifier.png");
+  background-position: right;
+  background-size: 37.5px 37.5px;
+  padding-right: 37.5px;
+  font-size: 18.75px;
+  background-repeat: no-repeat;
+  text-align: right;
+  transition: width 1s;
+  background-color: transparent;
+  border: none;
+  outline: 1px solid #aaa;
+  border-radius: 10px;
+  background-color: white;
+  font-family: 'Vazirmatn', sans-serif;
+}
+#search-inp:focus{
+  width: 180px;
+  outline: 1px solid #aaa;
+}
+#nav-right a{
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #222;
+  font-size: 20px;
+  text-decoration: none;
+}
+#nav-right a:first-child{
+  margin-right: 70px;
+}
+/*Container*/
+#container{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+  min-height: 1000px;
+  margin-top: 100px;
+}
+.div-img{
+  width: 250px;
+  height: 300px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  user-select: none;
+}
+.img{
+  width: 100%;
+  height: 100%;
+}
+.cover{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 300px;
+  opacity: 0;
+  margin-top: -304px;
+  background-color: #000;
+  transition: opacity 1s;
+  cursor: pointer;
+  z-index: 2;
+}
+.cover:hover{
+  opacity: 0.7;
+}
+.fullpage{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: white;
+  z-index: 2;
+}
+#page{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  user-select: none;
+  opacity: 0.9;
+  z-index: 10;
+  transition: opacity 0.5s;
+}
+.dis-none{
+  display: none;
+}
+.fade{
+  opacity: 0 !important;
+}
+#page-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#previous{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+  text-align: center;
+  background-color: transparent;
+  margin-right: 50px;
+  margin-right: 10vw;
+  user-select: none;
+  cursor: pointer;
+  border: 1px solid yellow;
+}
+#previous span{
+  font-size: 18px;
+  color: yellow;
+}
+#next{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+  text-align: center;
+  background-color: transparent;
+  margin-left: 10vw;
+  transition: opacity 0.5s;
+  user-select: none;
+  cursor: pointer;
+  border: 1px solid yellow;
+}
+#next span{
+  font-size: 18px;
+  color: yellow;
+}
+.opacity{
+  opacity: 0.5;
+}
+#main-img{
+  width: 50vw;
+  height: 50wh;
+}
+#coll-btn{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  color: white;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1050px) {
+  #container{
+    margin-top: 30vw;
+  }
+}
