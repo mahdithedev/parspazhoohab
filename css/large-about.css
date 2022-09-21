@@ -31,7 +31,7 @@ body{
   width: 26vw;
   height: 100%;
 }
-#language{
+#language {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -98,17 +98,20 @@ body{
   font-family: 'Vazirmatn', sans-serif;
   font-size: 1vw;
 }
+
 #search-inp:focus{
   width: 13.35vw;
   outline: 1px solid #aaa;
 }
-#nav-right a{
+
+#nav-right a {
   margin-left: 1.48vw;
   margin-right: 1.48vw;
   color: #222;
   font-size: 1.48vw;
   text-decoration: none;
 }
+
 #nav-right a:first-child{
   margin-right: 5.19vw;
 }
@@ -150,10 +153,12 @@ ul {
 ul li{
   margin-bottom: 1.6vh;
 }
+
 ul li:before {
   content: '✓';
   margin-left: 0.74vw;
 }
+
 /*Certifications*/
 #img-container{
   display: flex;
@@ -162,6 +167,7 @@ ul li:before {
   flex-flow: row wrap;
   width: 100%;
 }
+
 .img{
   width: 29.6vw;
   height: 80vh;
@@ -169,4 +175,8 @@ ul li:before {
   margin-right: 3.71vw;
   margin-top: 8vh;
   margin-bottom: 8vh;
+}
+
+#chart {
+  width:90%;
 }

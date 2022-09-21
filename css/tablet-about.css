@@ -170,3 +170,7 @@ body{
     margin-top: 10.7vw;
     margin-bottom: 10.7vw;
   }
+
+  #chart {
+    width:90%;
+  }

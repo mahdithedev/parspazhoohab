@@ -173,3 +173,7 @@ ul li:before {
     margin-top: 30vw;
   }
 }
+
+#chart {
+  width:90%;
+}
