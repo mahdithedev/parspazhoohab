@@ -174,3 +174,54 @@ body{
   #chart {
     width:90%;
   }
+
+  #khat{
+    margin-right: 50%;
+    margin-left: 50%;
+  }
+  #drop{
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-left: -0.8vw;
+  }
+  #drop div{
+    text-align: center;
+    padding: 2.14vw 1.6vw;
+    border-bottom: 1px dotted;
+  }
+  #drop a{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-right: 0px !important;
+    margin-top: 2.14vw !important;
+    margin-bottom: 2.14vw !important;
+    font-size: 2.88vw;
+  }
+  #ablin{
+    padding-left: 0vw;
+    padding-right: 0vw;
+  }
+  #abtxt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 3.2vw !important;
+    padding-right: 3.2vw !important;
+  }
+  #abtxt::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 18.4vw;
+    height: 50%;
+  }
+  #abtxt a{
+    text-align: center;
+    margin-left: 0vw !important;
+    margin-right: 0vw !important;
+  }
+  #ablin:hover #drop{
+    display: block !important;
+    background-color: #f0f0f0;
+  }

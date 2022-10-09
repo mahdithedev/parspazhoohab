@@ -160,6 +160,7 @@ ul li:before {
   flex-flow: row wrap;
   width: 100%;
 }
+
 .img{
   width: 400px;
   height: 500px;
@@ -176,4 +177,66 @@ ul li:before {
 
 #chart {
   width:90%;
+}
+
+#khat{
+  margin-right: 50%;
+  margin-left: 50%;
+}
+#drop{
+  display: none;
+  position: absolute;
+  top: 100%;
+  margin-left: -5px;
+}
+#drop div{
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px dotted;
+}
+#drop a{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  padding-right: 0px !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  font-size: 18px;
+}
+#ablin{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#abtxt{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+#abtxt::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 115px;
+  height: 100%;
+}
+#abtxt a{
+  text-align: center;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+#ablin:hover #drop{
+  display: block !important;
+  background-color: #f0f0f0;
+}
+@media only screen and (max-width: 1050px) {
+  #txt-container{
+    margin-top: 30vw;
+  }
+  #drop{
+    top: 50%;
+  }
+  #abtxt::after{
+    height: 50%;
+  }
 }
